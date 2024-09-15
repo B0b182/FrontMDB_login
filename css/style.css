@@ -1,0 +1,298 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css);
+
+
+
+.barra {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-end;
+
+}
+
+.ele {
+    margin-left: 8px;
+}
+
+.spn {
+    margin: 15px;
+
+}
+
+.butn {
+    margin: 10px;
+    width: 80px;
+}
+
+.containercards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #6aa0a2;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+.botoncito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    bottom: 20px;
+
+    background-color: #6aa0a2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 3px;
+}
+
+.card p {
+    text-align: center;
+    margin: 20px;
+}
+
+.card-image {
+
+    width: 250px;
+    margin: 10px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.botoncito:hover {
+    background-color: #1b4d50;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.ico {
+    width: 28px;
+    padding: 4px;
+}
+
+.botoncito-e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    bottom: 20px;
+
+    background-color: #1b4d50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 3px;
+
+}
+
+.botoncito-e:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.botonera {
+    display: flex;
+    justify-content: center;
+
+}
+
+.alltable {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+
+
+
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 140px;
+
+}
+
+.btn-nueva {
+
+    margin: 20px;
+}
+
+.copy {
+    background-color: #1b4d50;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 10px;
+
+}
+
+.btn-form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: end;
+    justify-content: end;
+
+
+}
+
+.bar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+
+    padding: 10px;
+}
+
+
+nav img {
+    height: 100px;
+}
+
+.botones button {
+    background-color: #ffffff;
+    color: #1b4d50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botones button:hover {
+    background-color: #ffffff;
+    color: #6aa0a2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    scale: 1.2;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.titles {
+    text-align: center;
+    margin: 5px;
+}
+
+.card2 {
+
+    align-items: center;
+    width: 200px;
+    height: 750px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.3s ease;
+
+}
+
+.card2 p {
+    text-align: center;
+    margin: 20px;
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.containercards2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 140vh;
+    background-color: #6aa0a2;
+}
+
+.card-image2 {
+
+    width: 180px;
+    margin: 10px;
+
+}
+
+.bodyf {
+    background-color: #6aa0a27a;
+}
+
+.login-container {
+    width: 350px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #1b4d50;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+.reg {
+    margin: 10px;
+}
+
+.btnf{
+    margin: 10px auto;
+}
+
+

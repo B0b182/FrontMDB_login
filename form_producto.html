@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar/Editar</title>
+    <link rel="shortcut icon" href="/css/imagenes/ico.png" type="image/x-icon">
+    <link rel="icon" href="/css/imagenes/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="bodyf">
+
+    <header>
+        <nav class="bar1">
+            <img src="/css/imagenes/nav.jpg" alt="Logo de tu empresa">
+            <div class="botones">
+                <button onclick="window.location.href='index.html'">Inicio</button>
+                <button id="logout" type="submit">Cerrar Sesion</button>
+
+            </div>
+        </nav>
+        <img src="/css/imagenes/banner3.jpg" alt="baner pricipal" class="banner">
+
+    </header>
+
+    <section class="container">
+
+        <div class="row aling-items-center mb-4 ">
+            <span class="fw-bold w-auto spn">formulario Productos </span>
+
+
+            <div class="row">
+                <form class="mt-4" action="" onsubmit="" method="POST">
+            </div class="mb-3">
+            <label for="producto" class="form-label"> Producto</label>
+            <input type="text" class="form-control" name="productoC" id="productoC">
+            <div>
+
+            </div class="mb-3">
+            <label for="codigo" class="form-label"> Codigo </label>
+            <input type="number" class="form-control" name="codigoC" id="codigoC">
+            <div>
+
+            </div class="mb-3">
+            <label for="proveedor" class="form-label"> Proveedor</label>
+            <input type="text" class="form-control" name="proveedorC" id="proveedorC">
+            <div>
+
+            </div class="mb-3">
+            <label for="unidades" class="form-label"> Unidades</label>
+            <input type="text" class="form-control" name="unidadesC" id="unidadesC">
+            <div>
+
+            </div class="mb-3">
+            <label for="ingreso" class="form-label"> Ingreso</label>
+            <input type="text" class="form-control" name="ingresoC" id="ingresoC">
+            <div>
+
+
+
+
+                <div class="btn-form">
+
+
+                    <button id="btn-guardar" type="button" class="botoncito ">Guardar
+                        <img src="/css/imagenes/gua.png" alt="Descripción de la imagen" class="ico">
+                    </button>
+    
+    
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+    <script src="/js/request.js"></script>
+    <script src="/js/productos.js"></script>
+    <script>
+        window.onload = () => {
+            let boton = document.getElementById('btn-guardar')
+
+            const u = new URLSearchParams(
+                window.location.search)
+            let id = u.get('id')
+            cargardatos(u.get('id'));
+            if (id !== null
+            ) {
+                boton.onclick = () => {
+                    editarproducto(u.get('id'));
+
+                }
+                console.log('editar');
+
+
+            } else {
+                boton.onclick = () => {
+                    guardarproducto();
+                }
+                console.log('guardar')
+
+
+            }
+
+
+
+        }
+    </script>
+      <script src="/js/index.js"></script>
+
+</body>
+
+</html>

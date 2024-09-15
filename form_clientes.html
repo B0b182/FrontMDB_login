@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar/Editar</title>
+    <link rel="shortcut icon" href="/css/imagenes/ico.png" type="image/x-icon">
+    <link rel="icon" href="/css/imagenes/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="bodyf">
+
+    <header>
+        <nav class="bar1">
+            <img src="/css/imagenes/nav.jpg" alt="Logo de tu empresa">
+            <div class="botones">
+                <button onclick="window.location.href='index.html'">Inicio</button>
+                <button id="logout" type="submit">Cerrar Sesion</button>
+
+            </div>
+        </nav>
+        <img src="/css/imagenes/banner3.jpg" alt="baner pricipal" class="banner">
+
+    </header>
+
+    <section class="container">
+
+        <div class="row aling-items-center mb-4 ">
+            <span class="fw-bold w-auto spn">formulario clientes </span>
+
+
+            <div class="row">
+                <form class="mt-4" action="" onsubmit="" method="POST">
+            </div class="mb-3">
+            <label for="nombres" class="form-label"> Nombres</label>
+            <input type="text" class="form-control" name="nombresC" id="nombresC">
+            <div>
+
+            </div class="mb-3">
+            <label for="apellidos" class="form-label"> Apellidos</label>
+            <input type="text" class="form-control" name="apellidosC" id="apellidosC">
+            <div>
+
+            </div class="mb-3">
+            <label for="cedula" class="form-label"> Cedula</label>
+            <input type="number" class="form-control" name="cedulaC" id="cedulaC">
+            <div>
+
+            </div class="mb-3">
+            <label for="correo" class="form-label"> Correo</label>
+            <input type="email" class="form-control" name="correoC" id="correoC">
+            <div>
+
+            </div class="mb-3">
+            <label for="telefono" class="form-label"> Telefono</label>
+            <input type="number" class="form-control" name="telefonoC" id="telefonoC">
+            <div>
+
+            </div class="mb-3">
+            <label for="direccion" class="form-label"> Dirección</label>
+            <input type="text" class="form-control" name="direccionC" id="direccionC">
+            <div class="btn-form">
+
+
+                <button id="btn-guardar" type="button" class="botoncito ">Guardar
+                    <img src="/css/imagenes/gua.png" alt="Descripción de la imagen" class="ico">
+                </button>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+    <script src="/js/request.js"></script>
+    <script src="/js/clientes.js"></script>
+    <script>
+        window.onload = () => {
+            let boton = document.getElementById('btn-guardar')
+
+            const u = new URLSearchParams(
+                window.location.search)
+            let id = u.get('id')
+            cargardatos(u.get('id'));
+            if (id !== null
+            ) {
+                boton.onclick = () => {
+                    editarClientes(u.get('id'));
+
+                }
+                console.log('editar');
+
+
+            } else {
+                boton.onclick = () => {
+                    guardarClientes();
+                }
+                console.log('guardar')
+
+
+            }
+
+
+
+        }
+    </script>
+      <script src="/js/index.js"></script>
+
+</body>
+
+</html>

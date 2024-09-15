@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="/css/imagenes/ico.png" type="image/x-icon">
+    <link rel="icon" href="/css/imagenes/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <nav class="bar1">
+                <img src="/css/imagenes/nav.jpg" alt="Logo de tu empresa">
+                <div class="botones">
+                    <button onclick="window.location.href='index.html'">Inicio</button>
+                    <button onclick="window.location.href='clientes.html'">Clientes</button>
+                    <button id="logout" type="submit">Cerrar Sesion</button>
+
+                </div>
+            </nav>
+            <img src="/css/imagenes/banner5.jpg" alt="baner pricipal" class="banner">
+
+
+
+    </header>
+
+    <section class="container">
+
+        <table class="table table-striped-columns alltable">
+            <thead class="tablita-h">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Proveedor</th>
+                    <th scope="col">Unidades</th>
+                    <th scope="col">ingreso</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="llenarpro">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contenedor-boton">
+
+            <button class="botoncito btn-nueva " onclick="window.location='form_producto.html'">Nuevo Producto</button>
+        </div>
+
+    </section>
+    <script src="/js/request.js"></script>
+    <script src="/js/productos.js"></script>
+    <script> window.onload = function () {
+            mostrarProductos();
+
+        }</script>
+
+    <script src="/js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
